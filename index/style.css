@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+#landingPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(to right, #fff7e6, #e6f2ff);
+}
+
+.landing-left {
+  max-width: 50%;
+}
+
+.landing-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.landing-left p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.button-group button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  margin-right: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-group button:first-child {
+  background-color: #3d5afe;
+  color: white;
+}
+
+.landing-right img.placeholder-image {
+  max-width: 400px;
+}
+
+form {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin: 10px 5px 20px 0;
+  background-color: #2e3a59;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.resume-output {
+  margin: 40px auto;
+  max-width: 900px;
+  display: none;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  #landingPage {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-left, .landing-right {
+    width: 100%;
+  }
+
+  .landing-right img {
+    max-width: 80%;
+  }
+}
